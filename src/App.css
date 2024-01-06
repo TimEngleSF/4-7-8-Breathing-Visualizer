@@ -214,10 +214,23 @@ footer {
     margin-bottom: 1rem;
 }
 
+.desktop-msg {
+    display: none;
+}
+
 .footer-icon {
     color: var(--main-txt-color);
 }
 
 .footer-icon:visited {
     color: var(--main-txt-color);
+}
+
+@media screen and (min-width: 50rem) {
+    .desktop-msg {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        display: block;
+    }
 }

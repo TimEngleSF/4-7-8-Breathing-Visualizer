@@ -3,6 +3,7 @@ import './App.css';
 import Modal from './components/Modal';
 import Counter from './components/Counter';
 import Visualizer from './components/Visualizer';
+import { FaGithub } from 'react-icons/fa6';
 
 enum Directions {
     Inhale = 'Inhale',
@@ -84,7 +85,16 @@ function App() {
                         Stop
                     </button>
                 </div>
+                <div className="desktop-msg">
+                    <p>The 4-7-8 Technique is used to help relax.</p>
+                    <p> You should step away from your computer.</p>
+                </div>
             </main>
+            <footer>
+                <a href="https://github.com/TimEngleSF/4-7-8-Breathing-Visualizer">
+                    <FaGithub className="footer-icon" size="2rem" />
+                </a>
+            </footer>
         </>
     );
 }
