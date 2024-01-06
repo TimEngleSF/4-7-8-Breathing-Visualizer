@@ -1,0 +1,52 @@
+#root {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #242424eb;
+    padding: 1.25rem;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.modal p {
+    text-align: left;
+}
+
+/* Visualizer Styles */
+.visualizer {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin: 1.25rem auto;
+}
+
+.visualizer-circle {
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 50%;
+    border: 0.0938rem solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Utility Styles */
+.btn {
+}
