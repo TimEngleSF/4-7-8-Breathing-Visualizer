@@ -1,3 +1,8 @@
+:root {
+    --main-dk: #242424;
+    --main-txt-color: #ffffffde;
+}
+
 #root {
     max-width: 80rem;
     margin: 0 auto;
@@ -7,9 +12,10 @@
 html,
 body {
     font-family: 'Nunito', sans-serif;
+    color: var(--main-txt-color);
 }
 main {
-    background-color: #242424;
+    background-color: var(--main-dk);
 }
 
 /* Modal Styles */
@@ -61,7 +67,7 @@ h1 {
     width: 18.75rem;
     height: 18.75rem;
     border-radius: 50%;
-    border: 0.0938rem solid white;
+    border: 0.0938rem solid var(--main-txt-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,7 +77,8 @@ h1 {
 }
 
 .visualizer-circle:hover:not(.active) {
-    box-shadow: 0 0 35px 6px white, inset 0 0 14px 0px white;
+    box-shadow: 0 0 35px 6px var(--main-txt-color),
+        inset 0 0 14px 0px var(--main-txt-color);
 }
 
 /* Counter and Stop Button */
