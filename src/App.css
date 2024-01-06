@@ -4,7 +4,9 @@
     padding: 2rem;
     text-align: center;
 }
-
+main {
+    background-color: #242424;
+}
 /* Modal Styles */
 .modal {
     position: fixed;
@@ -16,17 +18,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
+    text-align: left;
 }
 
 .modal-content {
     background-color: #242424eb;
     padding: 1.25rem;
     border-radius: 5px;
-    width: 50%;
+    width: 90%;
 }
 
-.modal p {
-    text-align: left;
+/* Main Content */
+h1 {
+    letter-spacing: 1.8px;
 }
 
 /* Visualizer Styles */
@@ -47,6 +52,22 @@
     align-items: center;
 }
 
+/* Counter and Stop Button */
+.counter-button__container {
+    opacity: 1;
+    transition: opacity 300ms ease, visibility 0.5s;
+}
+
 /* Utility Styles */
 .btn {
+    padding: 4px 8px;
+    font-weight: 600;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.model-open {
+    filter: blur(0.25rem);
 }

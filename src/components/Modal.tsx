@@ -10,13 +10,15 @@ const Modal: FC<ModalProps> = ({ isOpen, onClose }) => {
         return null;
     }
     return (
-        <div className="modal">
+        <div className="modal" onClick={onClose}>
             <div className="modal-content">
                 <h2>4-7-8 Breathing Technique</h2>
-                <p>
-                    The 4-7-8 breathing technique is a simple yet powerful way
-                    to promote relaxation and improve sleep. Here's how to do
-                    it:
+                <div>
+                    <p>
+                        The 4-7-8 breathing technique is a simple yet powerful
+                        way to promote relaxation and improve sleep. Here's how
+                        to do it:
+                    </p>
                     <ol>
                         <li>
                             Position your tongue against the ridge behind your
@@ -31,7 +33,7 @@ const Modal: FC<ModalProps> = ({ isOpen, onClose }) => {
                         </li>
                     </ol>
                     Repeat this cycle for four breaths.
-                </p>
+                </div>
                 <p>
                     This technique helps calm the mind, reduce stress and
                     anxiety, and can be particularly effective in preparing the
