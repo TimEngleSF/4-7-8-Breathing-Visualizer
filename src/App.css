@@ -4,9 +4,14 @@
     padding: 2rem;
     text-align: center;
 }
+html,
+body {
+    font-family: 'Nunito', sans-serif;
+}
 main {
     background-color: #242424;
 }
+
 /* Modal Styles */
 .modal {
     position: fixed;
@@ -29,9 +34,19 @@ main {
     width: 90%;
 }
 
+.modal-content button {
+    display: block;
+    margin: 0 auto;
+}
+
 /* Main Content */
 h1 {
     letter-spacing: 1.8px;
+    font-weight: 700;
+}
+
+.open-modal-btn {
+    font-size: 1.25rem;
 }
 
 /* Visualizer Styles */
@@ -39,17 +54,24 @@ h1 {
     display: flex;
     justify-content: center;
     cursor: pointer;
-    margin: 1.25rem auto;
+    margin: 3rem auto;
 }
 
 .visualizer-circle {
-    width: 12.5rem;
-    height: 12.5rem;
+    width: 18.75rem;
+    height: 18.75rem;
     border-radius: 50%;
     border: 0.0938rem solid white;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-size: 2.5rem;
+    transition: box-shadow 300ms;
+}
+
+.visualizer-circle:hover:not(.active) {
+    box-shadow: 0 0 35px 6px white, inset 0 0 14px 0px white;
 }
 
 /* Counter and Stop Button */
@@ -58,10 +80,25 @@ h1 {
     transition: opacity 300ms ease, visibility 0.5s;
 }
 
+.counter {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.counter span {
+    display: block;
+}
+
+.stop-btn {
+    font-family: inherit;
+    font-size: 1.5rem;
+}
 /* Utility Styles */
 .btn {
+    font-family: inherit;
     padding: 4px 8px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .hidden {

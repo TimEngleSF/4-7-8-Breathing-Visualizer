@@ -2,18 +2,26 @@ import { FC } from 'react';
 
 interface VisualizerProps {
     direction: string;
-    onStart: () => void;
+    handleStart: () => void;
+    isRunning: boolean;
 }
 
-const Visualizer: FC<VisualizerProps> = ({ direction, onStart }) => {
+const Visualizer: FC<VisualizerProps> = ({
+    direction,
+    handleStart,
+    isRunning,
+}) => {
     return (
         <div
             className="visualizer"
-            onClick={onStart}
+            onClick={handleStart}
             role="button"
             tabIndex={0}
         >
-            <div className="visualizer-circle" aria-live="polite">
+            <div
+                className={`visualizer-circle ${isRunning ? 'active' : ''}`}
+                aria-live="polite"
+            >
                 {direction}
             </div>
         </div>

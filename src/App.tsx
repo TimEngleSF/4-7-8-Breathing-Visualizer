@@ -8,7 +8,7 @@ function App() {
     const [count, setCount] = useState(0);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isRunning, setIsRunning] = useState(false);
-    const [direction, setDirection] = useState('Click to start');
+    const [direction, setDirection] = useState('Press to start');
 
     const handleStart = () => {
         if (!isRunning) {
@@ -37,7 +37,11 @@ function App() {
                 >
                     Learn the Technique
                 </button>
-                <Visualizer direction={direction} onStart={handleStart} />
+                <Visualizer
+                    direction={direction}
+                    handleStart={handleStart}
+                    isRunning={isRunning}
+                />
                 <div
                     className={`counter-button__container ${
                         isRunning ? '' : 'hidden'
