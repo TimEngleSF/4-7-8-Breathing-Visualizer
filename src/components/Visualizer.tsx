@@ -14,6 +14,8 @@ const Visualizer: FC<VisualizerProps> = ({
     const renderDirection = (direction: string) =>
         direction.split('\n').map((dir, i) => <div key={i}>{dir}</div>);
 
+    const circleClass = `visualizer-circle ${direction.toLowerCase()}`;
+
     return (
         <div
             className="visualizer"
@@ -22,10 +24,12 @@ const Visualizer: FC<VisualizerProps> = ({
             tabIndex={0}
         >
             <div
-                className={`visualizer-circle ${isRunning ? 'active' : ''}`}
+                className={`${circleClass} ${isRunning ? 'active' : ''}`}
                 aria-live="polite"
             >
-                {renderDirection(direction)}
+                <div className="visualizer-text">
+                    {renderDirection(direction)}
+                </div>
             </div>
         </div>
     );
