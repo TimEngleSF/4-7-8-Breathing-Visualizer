@@ -34,7 +34,7 @@ const Modal: FC<ModalProps> = ({ isOpen, onClose }) => {
                     </ol>
                     Beginners should not complete more than 2 rounds.
                 </div>
-                <p>
+                <p className="description">
                     This technique helps calm the mind, reduce stress and
                     anxiety, and can be particularly effective in preparing the
                     body for sleep. Regular practice can train your body to
