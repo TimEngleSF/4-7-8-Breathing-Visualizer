@@ -64,13 +64,14 @@ h1 {
 }
 
 .visualizer-circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 18.75rem;
     height: 18.75rem;
     border-radius: 50%;
     border: 0.0938rem solid var(--main-txt-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     font-size: 2.5rem;
     transition: box-shadow 300ms;
