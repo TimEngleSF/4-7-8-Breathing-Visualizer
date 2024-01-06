@@ -32,7 +32,7 @@ const Modal: FC<ModalProps> = ({ isOpen, onClose }) => {
                             making a whooshing sound.
                         </li>
                     </ol>
-                    Repeat this cycle for four breaths.
+                    Beginners should not complete more than 2 rounds.
                 </div>
                 <p>
                     This technique helps calm the mind, reduce stress and
