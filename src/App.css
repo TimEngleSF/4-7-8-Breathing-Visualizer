@@ -1,6 +1,7 @@
 :root {
     --main-dk: #242424;
     --main-txt-color: #ffffffde;
+    --btn-bg-color: #6b6b6b;
 }
 
 html,
@@ -28,6 +29,7 @@ body {
     text-align: center;
     height: 100vh;
     box-sizing: border-box;
+    background-color: var(--main-dk);
 }
 
 main {
@@ -213,21 +215,10 @@ h1 {
 .stop-btn {
     font-family: inherit;
     font-size: 1.5rem;
-}
-/* Utility Styles */
-.btn {
-    font-family: inherit;
-    padding: 4px 8px;
-    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
-.hidden {
-    opacity: 0;
-}
-
-.model-open {
-    filter: blur(0.25rem);
-}
+/* Footer */
 
 footer {
     margin-top: auto;
@@ -244,6 +235,25 @@ footer {
 
 .footer-icon:visited {
     color: var(--main-txt-color);
+}
+
+/* Utility Styles */
+.btn {
+    font-family: inherit;
+    padding: 4px 8px;
+    font-weight: 700;
+    color: var(--main-txt-color);
+    background-color: var(--btn-bg-color);
+    border-radius: 0.4375rem;
+    border: 0px;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.model-open {
+    filter: blur(0.25rem);
 }
 
 @media screen and (min-width: 50rem) {
