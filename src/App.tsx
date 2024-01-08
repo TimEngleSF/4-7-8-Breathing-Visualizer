@@ -80,10 +80,10 @@ function App() {
                         isRunning ? '' : 'hidden'
                     }`}
                 >
-                    <Counter count={count} />
                     <button className={`stop-btn btn `} onClick={handleStop}>
                         Stop
                     </button>
+                    <Counter count={count} />
                 </div>
                 <div className="desktop-msg">
                     <p>The 4-7-8 Technique is used to help relax.</p>
